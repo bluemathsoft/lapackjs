@@ -30,7 +30,7 @@ $(ZB1AUX): $(FRC)
 #  Level 2 and Level 3 BLAS.  Comment it out only if you already have
 #  both the Level 2 and 3 BLAS.
 #---------------------------------------------------------------------
-ALLBLAS  = lsame.o xerbla.o xerbla_array.o
+ALLBLAS  = lsame.o #xerbla.o xerbla_array.o
 $(ALLBLAS) : $(FRC)
 
 #---------------------------------------------------------
@@ -85,3 +85,6 @@ $(BCFILES): %.bc:%.c
 	emcc $< -Wparentheses -I . -I ../../INCLUDE -o $@
 
 all: $(BCFILES)
+
+clean:
+	rm -f *.bc

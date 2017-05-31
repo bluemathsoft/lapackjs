@@ -1,5 +1,5 @@
 
-const em = require('./BLAS/blas');
+const em = require('./lapack');
 
 let saxpy = em.cwrap('f2c_saxpy',
     'number', // Function return void
