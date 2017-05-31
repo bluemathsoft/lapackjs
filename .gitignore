@@ -1,0 +1,7 @@
+F2CLIBS/libf2c/*.bc
+BLAS/SRC/*.bc
+BLAS/blas.js
+F2CLIBS/libf2c/arith.h
+F2CLIBS/libf2c/signal1.h
+F2CLIBS/libf2c/sysdep1.h
+
